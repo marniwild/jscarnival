@@ -1,42 +1,41 @@
+# Welcome to the JavaScript Carnival!
 
-# Applying Classes in the DOM
+## Summary
 
-In this exercise you will use your code editor to manipulate the DOM by changing the colours of the dots you see in your browser.
+Welcome to the JavaScript Carnival! It's a wonderful place full of exciting games and activities... Just kidding! All three of our games are broken. Please help us fix the carnival using your JavaScript skills.
 
----
+## Timebox
 
-1. Open the `index.html` file contained in this repository in your internet browser. You should be able to see three grey dots on the page.
+Challenge           | Time    |
+--------------------|---------|
+Inflate The Unicorn | 3 hours
+Whack-A-Mole        | 5 hours
+Dress The Clown     | 5 hours
+Reflect             | 30 minutes
 
-2. Let's have an explore of the files you have in this folder.
+## Let's get going!
 
-**index.html**\
-This is the file that we loaded on your browser. It contains the three `div` elements that have created the circles on your page (and one more that is currently invisible). It also contains a `link` and `script` tag in the head that make use of our other files.
+1. Before you start working through this challenge, make sure you have forked this repo to your own account.
 
-**style.css**\
-In this styles file we have a number of styles already written. Notice that there's a style for the class `blue` whose only job is to alter the `background-color` of whatever element it is applied to. 
+2. Clone the forked repo from your GitHub to your computer.
 
-**classes.js**\
-Notice that in this file the `one` function goes looking for the div by its `id` attribute. Once this has been returned and given the name `one`, we then modify the `classList` property using the `add()` function. 
+3. Open the repo in VS Code and have a look around.
 
-3. Uncomment line 8 of `classes.js`. This should now call the `one` function when the page loads. Make a guess of what will happen now and then reload your browser page.
+## The Games
 
-4. Add another class to `style.css`. Call it `.green`, and have it alter the `background-color` of an element to green.
+These games are all independent from each other, however they are listed in order of difficulty so try fixing them in order. 
 
-5. In your `classes.js` file, write a new function called two which finds the element with id 'two' and modifies its classList property. Remember to call it from `start`.
-Reload the browser. Did the second div change colour?
+[Inflate The Unicorn](./inflate-the-unicorn/inflate-the-unicorn-README.md)  
+These poor unicorns have balloons for horns. Write code that inflates them!
 
-6. Pick a colour and follow the previous steps to make a third div change to the colour of your choice.
+[Whack-A-Mole](./whack-a-mole/whack-a-mole-README.md)  
+The carnival classic "Whack a Mole" brought to life right inside your very own web browser. Where did all the moles go?
 
-Notice that the fourth div in `index.html` has a class already: `invisible`. It's also not on the screen in the browser. There's no `id` attribute, so we can't find it using `getElementById`. To find things by class instead, we need to use `getElementsByClassName` (note the 's' in Elements). 
+[Dress The Clown](./dress-the-clown/dress-the-clown-README.md)  
+A dress-up game where you make a clown look fancy!
 
-`getElementsByClassName` returns an array, because there could be many DOM elements with the class `invisible`. The [MDN documentation on `getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) might be useful here.
+## Feedback!
 
-7. Write a new function called `makeVisible`.  Because there's only one invisible div, we know it must be element `[0]` in the array that comes back from `getElementsByClassName`.
+Once you have completed these exercises (or as much of them as you can handle!) go to your `my-reflections-sprint-5.md` using VS Code and answer the questions under the `JS Carnival` heading.
 
-6. Add the `'visible'` class to the div's `classList` property using the same method as the previous examples.
-
-7. Call the `makeVisible` function from start.
-
-8. Reload the browser. If all has gone well, you should see a fourth div. If not, spend a little time troubleshooting, then reach out for help on slack.
-
-When you're done, make sure you stage, commit, and push your branch back to GitHub.
+Add, commit, and push your answers to GitHub.
